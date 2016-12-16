@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mr.Robot Error404 Print</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+<style>
+@font-face {
+    font-family: 'perfect_dos_vga_437regular';
+    src: url('fonts/perfect_dos_vga_437.eot');
+    src: url('fonts/perfect_dos_vga_437.eot?#iefix') format('embedded-opentype'),
+         url('fonts/perfect_dos_vga_437.woff2') format('woff2'),
+         url('fonts/perfect_dos_vga_437.woff') format('woff'),
+         url('fonts/perfect_dos_vga_437.ttf') format('truetype'),
+         url('fonts/perfect_dos_vga_437.svg#perfect_dos_vga_437regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #111;
+}
+
+.prt { display: none;}
+
+.not-prt{
+  font-family: 'perfect_dos_vga_437regular';
+  padding-top: 30%;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #c31e24;
+  font-family: sans-serif;
+}
+a:hover{ color: #fff;}
+
+.btn { margin-top: 3.5rem;}
+  .fa { color: #222;}
+  .fa:hover{ color: #fff;}
+  .fa-github { letter-spacing: 2rem;}
+  .fa-twitter:hover{ color: #1DA1F2;}
+
+
+@media (min-width: 768px){
+  .not-prt { padding-top: 20%;}
+  h1 { font-size: 2.5rem;}
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  .not-prt { display: none;}
+  .prt { display: block;}
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #111;
+    text-align: center;
+    font-family: 'perfect_dos_vga_437regular';
+    background-color: #fff;
+  }
+  body {
+    width: 210mm;   /* needed for Chrome */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 5.5rem;
+    letter-spacing: .01em;
+    color: #111;
+    line-height: 1.4em;
+  }
+}
+</style>
+</head>
+<body>
+  <section class="not-prt">
+    <h1>Error 404 Not Found</h1>
+    <p><a href="" title="" onclick="window.print(); return false;">PRINT NOW</a></p>
+    <p class="btn"><a href="https://github.com/kenhrmt/mrrobot-404"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a><a href="https://twitter.com/kenhrmt"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></p>
+  </section>
+  <section class="prt">
+    <h2>Error 404<br>Not Found</h2>
+  </section>
+</body>
+</html>
